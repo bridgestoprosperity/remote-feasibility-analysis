@@ -64,5 +64,4 @@ Two safeguards keep the numbers honest. First, I always evaluate on sites the mo
 ## Useful next steps, none urgent
 
 - More labeled rejections outside Rwanda, whenever convenient. Uganda's 43 rejections made the transfer test possible; other countries lack them, and multi-climate labels would also unlock rainfall as an input.
-- The GitHub repository you mentioned, when ready.
 - I already found and used your published WaterNet data from Source Cooperative (cited, CC-BY); the head-to-head comparison above is the result, and I would enjoy comparing notes on it with whoever built WaterNet.
