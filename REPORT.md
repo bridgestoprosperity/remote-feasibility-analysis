@@ -38,7 +38,7 @@ Two safeguards keep the numbers honest. First, I always evaluate on sites the mo
 - **Rwanda** (about 1,250 sites, 24% feasible): the model's 100 highest-ranked sites contain 66 to 70 truly feasible ones, versus 24 by chance.
 - **Uganda** (80 sites, never seen by the model, 54% feasible): 15 of the model's top 20 picks are truly feasible. With only 80 test sites the uncertainty is wider; I report ranges alongside point numbers on request.
 - The model outputs calibrated probabilities. Where it is imperfect, it errs toward underconfidence: sites it rates highly are, if anything, better than stated.
-- A simpler statistical model (logistic regression) achieves nearly the same accuracy, which I keep alongside the main model as a robustness check and as the explainable version: it produces plain sentences about how each measurement shifts the odds.
+- A simpler statistical model (logistic regression) reaches AUC 0.75 against the main model's 0.78. The gap is small but real (paired bootstrap CI [0.005, 0.055]), and it closes only when the linear model gets hand-built interaction terms, which says the main model's edge comes from low-order interactions among the hydraulic features. I keep the simple model alongside the main one as a robustness check and as the explainable version: it produces plain sentences about how each measurement shifts the odds.
 
 ## Honest limitations
 

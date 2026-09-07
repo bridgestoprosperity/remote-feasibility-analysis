@@ -14,7 +14,7 @@ Unsurveyed site coordinates could identify communities, so raw site data never e
 
 ## Layout
 
-- `src/b2p/`: the pipeline. Feature extraction (`features.py`, `extract_*.py`), model evaluation (`test_uganda.py`, `test_fabdem.py`), scoring (`score_backlog.py`, `score_network.py`), and map rendering (`make_map.py`, `make_network_map.py`, `make_explorer.py`).
+- `src/b2p/`: the pipeline. Feature extraction (`features.py`, `extract_*.py`), training and spatial-CV evaluation (`train_model.py`), transfer and ablation tests (`test_uganda.py`, `test_fabdem.py`), scoring (`score_backlog.py`, `score_network.py`), and map rendering (`make_map.py`, `make_network_map.py`, `make_explorer.py`).
 - `figures/`: shareable outputs only.
 - `REPORT.md`: the deliverable write-up for Fika.
 
@@ -23,6 +23,7 @@ Unsurveyed site coordinates could identify communities, so raw site data never e
 Requires Python 3.13+ and [uv](https://docs.astral.sh/uv/). Install with `uv sync`, then run pipeline stages as modules, for example:
 
 ```
+uv run python -m b2p.train_model
 uv run python -m b2p.score_network
 uv run python -m b2p.make_network_map
 ```
