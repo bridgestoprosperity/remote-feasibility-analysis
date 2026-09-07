@@ -1,0 +1,29 @@
+[project]
+name = "b2p"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "allan-gon", email = "allan-gongora@lambdastudents.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "geopandas>=1.1.4",
+    "jupyterlab>=4.6.3",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "pykrige>=1.7.3",
+    "pysheds>=0.5",
+    "rasterio>=1.5.1",
+    "remotezip>=0.12.6",
+    "scikit-gstat>=1.0.23",
+    "scikit-learn>=1.9.0",
+]
+
+[project.scripts]
+b2p = "b2p:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
