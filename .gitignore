@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Site data is sensitive: coordinates could identify communities.
+# Raw data never leaves the analyst machine. Push only aggregated results.
+# Notebooks must be committed with outputs stripped (outputs can embed
+# site coordinates).
+data/
+figures/private/
