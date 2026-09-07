@@ -10,13 +10,12 @@ A machine learning model that predicts, from free remote-sensing data alone, whe
 
 ## Data sensitivity
 
-Unsurveyed site coordinates could identify communities, so raw site data never enters this repository. `data/` is gitignored, `figures/private/` (site-level maps) is gitignored, and notebooks are committed with outputs stripped. Everything committed here derives from public sources (Copernicus DEM, SoilGrids, published RCT bridges) or is aggregated past the point of disclosing any site.
+Unsurveyed site coordinates could identify communities, so raw site data never enters this repository. `data/` is gitignored and `figures/private/` (site-level maps) is gitignored. Everything committed here derives from public sources (Copernicus DEM, SoilGrids, published RCT bridges) or is aggregated past the point of disclosing any site.
 
 ## Layout
 
 - `src/b2p/`: the pipeline. Feature extraction (`features.py`, `extract_*.py`), model evaluation (`test_uganda.py`, `test_fabdem.py`), scoring (`score_backlog.py`, `score_network.py`), and map rendering (`make_map.py`, `make_network_map.py`, `make_explorer.py`).
 - `figures/`: shareable outputs only.
-- `notebooks/`: exploration; outputs stripped before commit.
 - `REPORT.md`: the deliverable write-up for Fika.
 
 ## Running
